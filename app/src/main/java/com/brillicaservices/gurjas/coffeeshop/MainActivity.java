@@ -38,9 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+                /* getting input from customer like customerName, capacity and quantity of coffee*/
                 String name = customerName.getText().toString();
                 int quantity = Integer.parseInt(coffeeQuantity.getText().toString());
                 int totalPrice = 0;
+
                 if (quantity250.isChecked())
                 {
                     totalPrice = quantity*10;
